@@ -21,7 +21,7 @@ class CreateProductTable extends Migration
             $table->float("price");
             $table->timestamp("created_at")->useCurrent();
             $table->timestamp("updated_at")->useCurrent();
-            $table->integer("status")->default(1);
+            $table->string("status");
         });
     }
 
